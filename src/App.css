@@ -91,15 +91,17 @@ ul li{
 .header--section{
     padding: 100px 40px;
 }
-nav ul{
-    display: flex;
-}
 .container{
-    padding: 100px 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+/* Header section */
+nav ul{
+    display: flex;
+}
+/* End Header section */
+/* Hero section */
 .hero--section--content{
     width: 51%;
     text-align: center;
@@ -116,6 +118,8 @@ nav ul{
     margin: 0 auto;
     font-size: 20px;
 }
+/* End Hero section */
+/* Features section */
 .features--section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -123,6 +127,8 @@ nav ul{
     gap: 150px;
     max-width: 70%;
     font-size: 18px;
+    margin: 100px 0;
+    
 }
 .feature-item {
     width: 90%;
@@ -130,3 +136,95 @@ nav ul{
 .feature-item p, .feature-item h2{
     padding: 10px 0;
 }
+/* End Features section */
+/* How works section */
+.howworks--section{
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px 40px;
+}
+.howworks--section--text{
+    max-width: 70%;
+}
+.howworks--section--text p{
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 30px;
+}
+.howworks--section--text a{
+    color: var(--accent-blue-inside-call);
+    font-size: 18px;
+}
+.howworks--section--text__link{
+    margin-top: 15px;
+}
+.howworks--section--img img{
+    text-align: center;
+}
+/* End How works section */
+/* Testimonials section */
+.testimonials--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+.testimonials--section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1600px;
+    width: 100%;
+    padding: 20px;
+}
+.testimonials--section__card {
+    background: var(--primary-dark-blue-testimonials);
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 6px var(--primary-dark-blue-intro);
+}
+.testimonials--section__card p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+}
+.testimonials--section__card--info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.testimonials--section__card--info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.testimonials--section__card--info .text-container {
+    display: flex;
+    flex-direction: column;
+
+}
+.testimonials--section__card--info h5 {
+    margin: 0;
+    font-size: 1.2em;
+}
+.testimonials--section__card--info p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #727272;
+}
+#card--icon{
+    position: relative;
+}
+#card--icon::before{
+    content: " ";
+    background: url(../public/img/bg-quotes.png) no-repeat;
+    width: 55px;
+    height: 45px;
+    z-index: -1;
+    position: absolute;
+    top: -33px;
+    left: -8px;
+}
+/* End Testimonials section */
